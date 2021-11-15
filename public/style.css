@@ -1,0 +1,71 @@
+body {
+  margin: 20px;
+  background-color: #70e6e0;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+#title {
+  font-size: 60px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#summary {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  width: 300px;
+}
+
+.btn.btn-secondary.dropdown-toggle {
+  background-color: #2e30be;
+}
+
+.btn.btn-dark {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 150px;
+  height: 40px;
+  border-radius: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#alerts {
+  margin: 30px;
+  text-align: center;
+}
+
+.btn.btn-primary {
+  background-color: #70e6e0;
+  color: black;
+  border: none;
+}
+
+.form-select {
+  margin-top: 30px;
+  height: 40px;
+  width: 150px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="index.js" defer></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Homepage</title>
+</head>
+<body>
+    <h1 id="title">Stock Market Ticker</h1>
+    <p id="summary">This is a stock ticker which alerts you when the price of the scrip
+         crosses a certain value in real time</p>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Alert Name</label>
+                <input type="email" class="form-control" id="name_input" aria-describedby="emailHelp" placeholder="Enter Name">
+            </div>
+        </form>
+        <select id="scrip_input" class="form-select" aria-label="Default select example">
+            <option value="ADANIPORTS">ADANIPORTS</option>
+            <option value="BAJAJ">BAJAJ</option>
+        </select>
+        <select id="criteria_input" class="form-select" aria-label="Default select example">
+            <option value="Crosses Above">Crosses Above</option>
+            <option value="Crosses Below">Crosses Below</option>
+        </select>
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Trigger Price</label>
+                <input type="email" class="form-control" id="price_input" aria-describedby="emailHelp" placeholder="Enter Price">
+            </div>
+        </form>
+    </div>
+    <button type="button" class="btn btn-dark" onclick="newAlert()">Set Alert!</button>
+    <table class="table" id="alerts">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Scrip</th>
+                <th scope="col">Criteria</th>
+                <th scope="col">Trigger Price</th>
+                <th scope="col">LTP</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+</body>
+</html>
